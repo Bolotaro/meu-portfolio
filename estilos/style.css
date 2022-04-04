@@ -15,7 +15,7 @@
     --cor5: #0A0E59;
 
     --fonte-padrão: roboto, Arial, sans-serif;
-    --fonte-destaque: "Share Tech Mono", roboto, Arial;
+    --fonte-destaque: "Share Tech Mono", monospace, roboto;
 }
 
 header{
@@ -73,3 +73,71 @@ strong{
     font-family: var(--fonte-destaque);
     color: var(--cor1);
 }
+
+section#sobre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    margin: auto;
+    background-image: url("../imagens/fundo1.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#sobre > h1{
+    font-family: var(--fonte-destaque);
+    text-align: center;
+    color: var(--cor1);
+    font-size: 5vw;
+    background-color: rgb(255, 255, 255);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+#container{
+    display: flex;
+    align-items: center;
+}
+
+#foto{
+    padding:50px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: auto;
+}
+
+#texto{
+   font-family: var(--fonte-padrão);
+   font-size: 1em;
+   font-weight: 450;
+   text-align: justify;
+   width: 550px;
+   margin: auto;
+   padding: 50px;
+}
+
+#texto > strong{
+    font-size: 1.1em;
+}
+
+section#conhecimentos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    margin: auto;
+    background-image: url("../imagens/fundo2.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#conhecimentos > h1{
+    font-family: var(--fonte-destaque);
+    text-align: center;
+    color: var(--cor1);
+    font-size: 5vw;
+    background-color: rgb(255, 255, 255);
+    padding: 15px;
+    border-radius: 10px;
