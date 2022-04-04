@@ -78,11 +78,12 @@ section#sobre{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 200px;
+    height: 204px;
     margin: auto;
     background-image: url("../imagens/fundo1.jpg");
     background-size: cover;
     background-attachment: fixed;
+    box-shadow: 0px 5px 35px -10px rgba(0, 0, 0, 0.411);
 }
 
 #sobre > h1{
@@ -95,27 +96,29 @@ section#sobre{
     border-radius: 10px;
 }
 
-#container{
+#foto{
     display: flex;
     align-items: center;
-}
-
-#foto{
-    padding:50px;
+    border: 3px dashed hsla(259, 88%, 58%, 0.849);
     width: 150px;
     height: 150px;
     border-radius: 50%;
     margin: auto;
+    margin-top:50px;
+    margin-bottom: 50px;;
+    border-style:
 }
 
 #texto{
    font-family: var(--fonte-padrão);
    font-size: 1em;
-   font-weight: 450;
-   text-align: justify;
-   width: 550px;
+   font-weight: 600;
+   text-align: center;
+   width: 780px;
    margin: auto;
    padding: 50px;
+   padding-top: 0px;
+   line-height: 25px;
 }
 
 #texto > strong{
@@ -131,6 +134,7 @@ section#conhecimentos{
     background-image: url("../imagens/fundo2.jpg");
     background-size: cover;
     background-attachment: fixed;
+    box-shadow: 0px 5px 35px -10px rgba(0, 0, 0, 0.411);
 }
 
 #conhecimentos > h1{
@@ -141,3 +145,14 @@ section#conhecimentos{
     background-color: rgb(255, 255, 255);
     padding: 15px;
     border-radius: 10px;
+}
+
+#listaconhecimentos{
+    text-align: center;
+    columns: 3;
+    margin: 50px;
+    font-family: var(--fonte-destaque);
+    font-size: 2vw;
+    color:var(--cor5);
+    list-style-type: none;
+}
