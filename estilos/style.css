@@ -5,6 +5,7 @@
 *{
     margin: 0%;
     padding: 0%;
+    list-style: none;
 }
 
 :root{
@@ -46,6 +47,7 @@ nav > a{
     padding: 10px;
     padding-right: 13px;
     text-shadow: 0px 2px 7px hsla(0, 0%, 0%, 0.226);
+   
 }
 
 nav > a:hover{
@@ -105,8 +107,7 @@ section#sobre{
     border-radius: 50%;
     margin: auto;
     margin-top:50px;
-    margin-bottom: 50px;;
-    border-style:
+    margin-bottom: 50px;
 }
 
 #texto{
@@ -147,12 +148,102 @@ section#conhecimentos{
     border-radius: 10px;
 }
 
-#listaconhecimentos{
+#listaconhecimento{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 24px;
     text-align: center;
-    columns: 3;
-    margin: 50px;
-    font-family: var(--fonte-destaque);
-    font-size: 2vw;
-    color:var(--cor5);
-    list-style-type: none;
+    margin-top: 50px;
 }
+
+#listaconhecimento > div > span{
+    font-family: var(--fonte-destaque);
+    text-align: center;
+    color: var(--cor2);
+    font-size: 2vw;
+    background-color: hsla(237, 80%, 19%, 0.158);
+    padding: 5px;
+    border-radius: 6px;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+ul{
+    display: flex;
+}
+
+li{
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+ul > li{
+    background-color: rgb(41, 41, 46);
+    width: 50px;
+    height: 50px;
+    border-radius: 6px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: rgb(0 0 0 / 50%) 0px 4px 16px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#html{
+    background-image: url("../imagens/html5.svg");
+    margin-right: 25px;
+}
+
+#css{
+    background-image: url("../imagens/css3.svg");
+    margin-left: 25px;
+}
+
+#js{
+    background-image: url("../imagens/js.svg");
+}
+
+#react{
+    background-image: url("../imagens/reactjs.svg");
+    margin-right: 25px;
+}
+
+#node{
+    background-image: url("../imagens/node.svg");
+    margin-right: 25px;
+    margin-left: 25px;
+}
+
+#typescript{
+    background-image: url("../imagens/typescript.svg");
+    margin-left: 25px;
+}
+
+#listaconhecimento > div > ul > li:hover{
+    width: 60px;
+    height: 60px;
+    transition-duration: 0.3s;
+}
+
+section#projetos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    margin: auto;
+    background-image: url("../imagens/fundo3.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    box-shadow: 0px 5px 35px -10px rgba(0, 0, 0, 0.411);
+}
+
+#projetos > h1{
+    font-family: var(--fonte-destaque);
+    text-align: center;
+    color: var(--cor1);
+    font-size: 5vw;
+    background-color: rgb(255, 255, 255);
+    padding: 15px;
+    border-radius: 10px;
+}
+
